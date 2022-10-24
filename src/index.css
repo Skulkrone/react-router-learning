@@ -1,5 +1,9 @@
-body {
+*, ::before, ::after {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
+}
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -11,3 +15,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+nav {
+  /* position: fixed; */
+  /* top: 0; */
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(45deg, rgb(156, 14, 156), midnightblue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ nav a {
+  text-decoration: none;
+  height: 100%;  
+  margin-right: 10px;
+  line-height: 50px;
+  color: #f1f1f1;
+  cursor: pointer;
+ }
+ h1 {
+  margin: 100px auto;
+ }
+ .activeLink {
+  background: linear-gradient(45deg, crimson, rgb(156, 14, 156));
+ }
